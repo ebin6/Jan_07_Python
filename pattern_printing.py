@@ -22,3 +22,9 @@ for r in range(1,rows+1):
 7 8 9 10
 
 """
+num=1
+for row in range(1,5):
+    for c in range(row):
+        print(num,end=" ")
+        num+=1
+    print("")
