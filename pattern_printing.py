@@ -31,6 +31,8 @@ for row in range(1,5):
 
 
 """
+Sample Pattern
+
 1
 2 6
 3 7 10
