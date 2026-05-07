@@ -40,3 +40,25 @@ Sample Pattern
 5 9 12 14 15
 
 """
+
+"""
+A
+A B 
+A B C 
+A B C D
+
+"""
+n=65
+for r in range(1,5):
+    for ch in range(r):
+        print(chr(n),end=" ")
+        n+=1 
+    print("")
+
+"""
+A
+B C
+D E F 
+G H I J
+
+"""

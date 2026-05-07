@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p class="my-text">Paragraph 1</p>
+    <p class="my-text">Paragraph 2</p>
+    <p class="my-text">Paragraph 3</p>
+    <p class="my-text">Paragraph 4</p>
+
+    <button onclick="updateText()">Change text</button>
+    <script>
+        function updateText(){
+            let new_text_1=prompt("Enter new text for p1")
+            let p1=document.querySelectorAll(".my-text")[1];
+            p1.textContent=new_text_1;
+            let new_text_2=prompt("Enter new text for p2")
+            let p2=document.querySelectorAll(".my-text")[3];
+            p2.textContent=new_text_2;
+        }
+    </script>
+</body>
+</html>

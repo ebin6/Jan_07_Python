@@ -1,0 +1,13 @@
+.all-emp{
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.emp-card{
+    width: fit-content;
+    margin: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}

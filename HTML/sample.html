@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+             padding: 8px 3px;
+            background-color: antiquewhite;
+            z-index:1000;
+            position: fixed;
+            width: 100%;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a{
+            text-decoration: none;
+        }
+
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        #login-container{
+            background-color: antiquewhite;
+            width: 250px;
+            padding: 30px; 
+            border-radius: 8px;
+            box-shadow: 1px 2px 10 px;
+        }
+        #login-container h1{
+            text-align: center;
+
+        }
+        .login-image{
+            width: 100px;
+            height: 100px;
+        }
+        .form-group{
+            margin: 10px 2px;
+           position: relative;
+    
+        }
+        .form-group input{
+            width: 100%;
+            padding: 3px;
+            border-radius: 8px;
+            border-color: white;
+ 
+        }
+        .form-group i{
+           right: 5px;
+            position:absolute;
+            top:50%;
+            transform: translateY(-50%);
+
+        }
+        .log-btn{
+            width: 100%;
+            padding: 3px;
+            background-color: azure;
+            border-radius: 6px;
+        }
+     
+        .log-btn:hover{
+            background-color: rgb(122, 167, 206);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">  
+                <span>OneTeam</span>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <main>
+        
+        <section id="login-container">
+            <h1>Login</h1>
+            <div style="display: flex;justify-content: center;">
+                <img class="login-image" src="css/images/default-user-image.png">
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="email" name="username" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="password" name="password" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div>
+                    <input class="log-btn" type="submit" value="Login">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
